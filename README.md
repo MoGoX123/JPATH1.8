@@ -143,16 +143,12 @@ boolean isValidPath = JSONPathUtil.isValidPath(jsonPath);
 Si el JSONPath es inválido, retornará `false`.
 
 ## Instalación IDM linux
-Para instalar la librería, primero se tiene que ir a la carpeta del proyecto, luego mediante el comando en una terminal:
+Para instalar la librería, primero se tiene que ir a la carpeta del proyecto, luego en la terminal ejecutar el comando:
 ```terminal maven
 mvn clean install
 ```
-Te generara la carpeta target donde se encuentra el `JPATH1.8-2.jar`, para poder ejecutarlo y probarlo puedes ejecuar el siguiente comando:
-```terminal java
-java -jar JPATH1.8-2.jar
-```
+Te va a generar una carpeta `target` donde se encuentra el `JPATH1.8-2.jar`, luego sigue estos pasos para instalarlo en IDM:
 
-Luego, sigue estos pasos para instalarlo en IDM:
 1. Accede al servidor donde esté instalado IDM.
 2. Copia el archivo descargado al servidor del motor, en la ruta:
    `/opt/novell/eDirectory/lib/dirxml/classes.`
@@ -162,3 +158,14 @@ chmod +x JPATH1.8-1.0.jar.
 ```
 
 Además, es importante asegurarse de incluir la librería JSONPath para que los métodos funcionen correctamente dentro de las reglas donde se vayan a usar. La inclusión de esta librería debe realizarse de la siguiente manera:
+
+![](https://github.com/MoGoX123/JPATH1.8/blob/master/path%20libreria%20idm.jpg)
+
+#### Nota
+La versión actual es compatible con Java 8. Si no tienes esta versión instalada, será necesario instalarla o actualizarla. Para poder ejecutarlo y probarlo puedes ejecuar el siguiente comando:
+```terminal java
+java -jar JPATH1.8-2.jar
+```
+
+Para más información del uso de la sintaxis visitar: 
+[Repo de JsonPath](https://github.com/json-path/JsonPath) -> versión 2.9.0 
