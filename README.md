@@ -159,7 +159,7 @@ chmod +x JPATH1.8-1.0.jar.
 
 Además, es importante asegurarse de incluir la librería JSONPath para que los métodos funcionen correctamente dentro de las reglas donde se vayan a usar. La inclusión de esta librería debe realizarse de la siguiente manera:
 
-![](https://github.com/MoGoX123/JPATH1.8/blob/master/path%20libreria%20idm.jpg)
+![](https://github.com/MoGoX123/JPATH1.8/blob/master/images/path%20libreria%20idm.jpg)
 
 #### Nota
 La versión actual es compatible con Java 8. Si no tienes esta versión instalada, será necesario instalarla o actualizarla. Para poder ejecutarlo y probarlo puedes ejecuar el siguiente comando:
